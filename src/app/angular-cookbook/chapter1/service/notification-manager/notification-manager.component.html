@@ -1,0 +1,7 @@
+<h4>Notifications Count: {{ count$ | async }}</h4>
+<div class="mt-4">
+  <p-button label="Add Notification" icon="pi pi-plus" severity="warning" class="mr-1" (click)="addNotification()" />
+  <p-button label="Remove Notification" icon="pi pi-minus" class="mr-1" severity="warning"
+    (click)="removeNotification()" />
+  <p-button label="Reset Count" icon="pi pi-refresh" severity="warning" class="mr-1" (onClick)="resetCount()" />
+</div>
