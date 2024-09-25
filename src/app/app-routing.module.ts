@@ -17,6 +17,13 @@ const routes: Routes = [
         './angular-cookbook/chapter1/service/notification-service/notification-service.component'
       ).then((m) => m.NotificationServiceComponent),
   },
+  {
+    path: 'ng-onchanges',
+    loadComponent: () =>
+      import(
+        './angular-cookbook/chapter1/ngOnChanges/version/version.component'
+      ).then((m) => m.VersionComponent),
+  },
 ];
 
 @NgModule({
