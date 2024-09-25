@@ -34,6 +34,10 @@ export class MenuComponent implements OnInit {
                 label: '🎬 Service',
                 routerLink: '/service',
               },
+              {
+                label: '🎬 ngOnChanges',
+                routerLink: '/ng-onchanges',
+              },
             ],
           },
         ],
