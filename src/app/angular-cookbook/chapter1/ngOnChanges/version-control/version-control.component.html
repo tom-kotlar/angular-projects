@@ -1,0 +1,18 @@
+<form [formGroup]="versionForm" (ngSubmit)="onSubmit()">
+
+    <div class="card flex justify-content-center">
+        <div class="flex flex-column gap-2">
+            <label for="vc">Version</label>
+            <input pInputText id="vc" aria-describedby="vc-help" formControlName="version" />
+            <small id="vc-help">
+                Enter your project version.
+            </small>
+        </div>
+    </div>
+
+    <div class="flex justify-content-center mt-5">
+        <p-button type="submit" label="Submit" icon="pi pi-check" [loading]="loading" />
+    </div>
+</form>
+
+<app-version-logs [vc]="versionName"></app-version-logs>
